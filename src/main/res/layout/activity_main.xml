@@ -76,6 +76,18 @@
             app:layout_constraintBottom_toBottomOf="@+id/RedSeekBar" android:padding="3dp"
             android:textColorLink="@android:color/black" android:textSize="15sp"/>
     <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_red_light"
+            android:id="@+id/textViewHexRed" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/RedSeekBar" android:padding="3dp"
+            android:textColorLink="@android:color/black" android:textSize="15sp"
+            app:layout_constraintVertical_bias="0.511" android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="24dp"
+    />
+    <TextView
             android:text="@string/verde"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -86,6 +98,18 @@
             app:layout_constraintTop_toBottomOf="@+id/RedSeekBar" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="@+id/GreenSeekBar" android:padding="3dp" android:textSize="15sp"/>
     <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light"
+            android:id="@+id/textViewHexGreen"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/RedSeekBar" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/GreenSeekBar" android:padding="3dp" android:textSize="15sp"
+            app:layout_constraintVertical_bias="0.511" android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="24dp"
+    />
+    <TextView
             android:text="@string/azul"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -94,6 +118,18 @@
             android:layout_marginStart="8dp" android:layout_marginTop="8dp"
             app:layout_constraintTop_toBottomOf="@+id/GreenSeekBar" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="@+id/BlueSeekBar" android:padding="3dp" android:textSize="15sp"/>
+    <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+            android:id="@+id/textViewHexBlue"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/GreenSeekBar" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/BlueSeekBar" android:padding="3dp" android:textSize="15sp"
+            app:layout_constraintVertical_bias="0.511" android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="24dp"
+    />
     <TextView
             android:text="@string/transparencia"
             android:layout_width="wrap_content"
@@ -106,6 +142,17 @@
             android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="@+id/AlphaSeekBar"
             android:padding="3dp" app:layout_constraintVertical_bias="0.488" android:textSize="15sp"/>
     <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/textViewHexAlpha"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/BlueSeekBar"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="@+id/AlphaSeekBar"
+            android:padding="3dp" app:layout_constraintVertical_bias="0.488" android:textSize="15sp"
+            android:layout_marginEnd="24dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="24dp"
+    />
+    <TextView
             android:text="@string/cor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -116,6 +163,17 @@
             android:layout_marginStart="8dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp" android:padding="3dp"
             android:textSize="15sp"/>
+    <TextView
+            android:text="(ff,0,0,0)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:id="@+id/textViewColor"
+            app:layout_constraintTop_toBottomOf="@+id/AlphaSeekBar"
+            android:padding="3dp"
+            android:textSize="15sp" android:layout_marginTop="8dp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+    />
     <View
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -128,5 +186,58 @@
             android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.555"
             android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/TextViewColor"/>
+    <EditText
+            android:layout_width="38dp"
+            android:layout_height="36dp"
+            android:inputType="textPersonName"
+            android:text="Hex: "
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_marginTop="28dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="14sp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/textViewHexRed" android:layout_marginRight="8dp"/>
+    <EditText
+            android:layout_width="38dp"
+            android:layout_height="36dp"
+            android:inputType="textPersonName"
+            android:text="Hex: "
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:layout_marginTop="112dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="14sp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/textViewHexGreen" android:layout_marginRight="8dp"/>
+    <EditText
+            android:layout_width="38dp"
+            android:layout_height="36dp"
+            android:inputType="textPersonName"
+            android:text="Hex: "
+            android:ems="10"
+            android:id="@+id/editText3"
+            android:layout_marginTop="200dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="14sp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/textViewHexBlue" android:layout_marginRight="8dp"/>
+    <EditText
+            android:layout_width="38dp"
+            android:layout_height="36dp"
+            android:inputType="textPersonName"
+            android:text="Hex: "
+            android:ems="10"
+            android:id="@+id/editText4" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" android:layout_marginTop="284dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="14sp" app:layout_constraintEnd_toStartOf="@+id/textViewHexAlpha"/>
+    <EditText
+            android:layout_width="38dp"
+            android:layout_height="36dp"
+            android:inputType="textPersonName"
+            android:text="Hex: "
+            android:ems="10"
+            android:id="@+id/editText5"
+            android:textSize="14sp"
+            tools:layout_editor_absoluteY="351dp"
+            tools:layout_editor_absoluteX="269dp"/>
 
 </android.support.constraint.ConstraintLayout>
