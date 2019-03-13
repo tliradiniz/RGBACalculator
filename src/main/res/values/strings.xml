@@ -5,4 +5,22 @@
     <string name="verde">Verde</string>
     <string name="vermelho">Vermelho</string>
     <string name="cor">Cor</string>
+    <string name="ff_0_0_0">ff,0,0,0</string>
+    <string name="HexRed">0</string>
+    <string name="DecRed">0</string>
+    <string name="hexGreen">0</string>
+    <string name="DecGreen">0</string>
+    <string name="HexBlue">0</string>
+    <string name="DecBlue">0</string>
+    <string name="HexAlpha">ff</string>
+    <string name="DecAlpha">255</string>
+    <string name="TextHexRed">Hex:</string>
+    <string name="TextDecRed">Dec:</string>
+    <string name="TextHexGreen">Hex:</string>
+    <string name="TextDecGreen">Dec:</string>
+    <string name="TextHexBlue">Hex:</string>
+    <string name="TextDecBlue">Dec:</string>
+    <string name="TextHexAlpha">Hex:</string>
+    <string name="TextDecAlpha">Dec:</string>
+    <string name="hexadecimal">Hexadecimal</string>
 </resources>
